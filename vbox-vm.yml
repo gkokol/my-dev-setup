@@ -11,7 +11,7 @@
   tasks:
     - name: Display login info
       debug:
-        msg: Access your user on {{ ansible_default_ipv4.address }} /%vboxnet0
+        msg: Access your user on {{ ansible_enp0s8.ipv4.address }}
 #    - name: find interface facts
 #      debug:
 #        msg: " this {{ hostvars[inventory_hostname]['ansible_%s' | format(item)] }} is it doing something"
