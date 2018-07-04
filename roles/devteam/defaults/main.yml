@@ -1,0 +1,11 @@
+---
+devteam_users:
+  - name: georgios
+    ssh_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhszWSnBbrm/hAVNuzL9WluGDcsr8EUFMrHh9vj2l/PDoYYAWwRmj7PxPvkKVHw6UGhdIIdBqAL0CLK16Iw5nTRwu8Ai0pMOZVLT181wHfiU3YE8d+iLh/kJY1PASdlacQzYuGooa1wNLbFblvaxuVMdZA0fRz1WuZAJzZjkvf33cFyF20Ojl5LrEddUeatZrkApEeePz74jF6wogo5b5V0LM5nbqvwNEPu5hkPa1QEmj8BUWsRnOsdG9uW1Lli0K/jRV/nDF0DYNsczc4IqhRAJ0FQ2Npcf0qrb4R7gfca3Pzi2MFsCXG7cYjm4i+OXg2HcdDU4QtROGdAlxzAjQ3"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiXPmqmCROOvWxV3kUuB7xgaqCv1iwFZ8lDBrpA8N22ENKIJxMZuiMtRoknQGoTyKQTM488DJ3+nOfubZm46+U1CK+u7/X/axEJOBZxiaTZ18Hb8FNrZxyJuspD6YTf5mTqPwi3ac93d255wQvpxijl2jt4b1vVNjKo6pAEhizezqGGu/hUCpCl6m4RLP7JR9jPbIxedBVVN/Ynjn/oPqbm7VkgKM0PzNylVz7B7PIOyjLaRukKHGiM7dQg4iOib+9JJen7gURnpWNgfiRugAdfd/irGMtG8O/exaUNSHUtOynaHx6f8N5v8NSA6dCxmXuTVM2esNXkgsErU/XcuWb"
+    dot_files:
+      - bashrc
+      - git-completion.bash
+    sudo: true
+    shell: "/bin/bash"

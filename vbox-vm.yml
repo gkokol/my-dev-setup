@@ -3,6 +3,16 @@
   gather_facts: yes
   roles:
     - vmsetup
+    - devteam
   vars:
     # this is mandatory to be set otherwise ansible does not work
     ansible_python_interpreter: /usr/bin/python3
+    devteam_groups: "develop"
+  tasks:
+    - name: Display login info
+      debug:
+        msg: Access your user on {{ ansible_default_ipv4.address }} /%vboxnet0
+#    - name: find interface facts
+#      debug:
+#        msg: " this {{ hostvars[inventory_hostname]['ansible_%s' | format(item)] }} is it doing something"
+#      with_items: "{{ ansible_interfaces }}"
