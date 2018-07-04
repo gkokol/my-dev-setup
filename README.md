@@ -15,7 +15,7 @@ Once the machine is up and running, you should be able to connect via:
 	ssh <ipv4> -l <user>
 
 Information regarding <ipv4> will be printed on the stdout via ansible,
-example: 
+example:
 
 	"Access your user on 172.16.254.1 "
 
@@ -58,4 +58,3 @@ Ansible has been split into:
 		Contains the packages that need to be installed
 	- roles:
 		Contains user info
-
