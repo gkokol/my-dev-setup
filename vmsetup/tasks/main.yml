@@ -1,0 +1,24 @@
+- name: install basic packages
+  action: >
+    {{ ansible_pkg_mgr }} name={{ item }} state=present update_cache=yes
+  with_items:
+    - gcc
+    - gdb
+    - valgrind
+
+- name: Run the equivalent of "apt-get update" as a separate step
+  apt:
+    update_cache: yes
+
+### SSH 
+- name: sshd config
+  template:
+    src: sshd_config.j2
+    dest: /etc/ssh/sshd_config
+  notify:
+  - restart sshd
+  tags: common
+
+- name: sshd service
+  service: name=sshd enabled=yes state=started
+  tags: common

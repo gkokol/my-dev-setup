@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  gather_facts: yes
+  roles:
+    - vmsetup
+  vars:
+    # this is mandatory to be set otherwise ansible does not work
+    ansible_python_interpreter: /usr/bin/python3
