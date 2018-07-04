@@ -10,6 +10,14 @@ Requires or has been tested with:
 	* ansible 2.4.3.0
 	* virtualbox 5.2.1
 
+Once the machine is up and running, you should be able to connect via:
+
+	ssh <ipv4> -l <user>
+
+Information regarding <ipv4> will be printed on the stdout via ansible,
+example: 
+
+	"Access your user on 172.16.254.1 "
 
 # Vagrantfile
 
@@ -50,3 +58,4 @@ Ansible has been split into:
 		Contains the packages that need to be installed
 	- roles:
 		Contains user info
+
